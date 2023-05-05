@@ -1,4 +1,4 @@
-# Learning how to code Machine Learning models
+# AI teaches me AI
 
 This is my logbook from my interactive lessons where ChatGPT teaches me ML
 
