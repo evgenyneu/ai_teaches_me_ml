@@ -1,0 +1,9 @@
+# Learning how to code Machine Learning models
+
+This is my logbook from my interactive lessons where ChatGPT teaches me ML
+
+The logs from each day are located in year/month/day directories. The directories have 'a' prefix, because Python does not run directories that are just numbers for its modules.
+
+## Python setup
+
+See [docs/python_setup.md](docs/python_setup.md).
