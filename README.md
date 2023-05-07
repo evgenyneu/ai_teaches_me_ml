@@ -7,3 +7,12 @@ The logs from each day are located in year/month/day directories. The directorie
 ## Python setup
 
 See [docs/python_setup.md](docs/python_setup.md).
+
+
+## VSCode search regexp
+
+Finds markdown blocks in .py file exported from a Jupyter notebook.
+
+```regexp
+^#\s*%%\s*\[markdown\][\s\S]*?\n\n
+```
