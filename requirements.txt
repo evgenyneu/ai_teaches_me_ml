@@ -4,16 +4,18 @@
 #
 #    pip-compile requirements.in
 #
-appnope==0.1.3
-    # via
-    #   ipykernel
-    #   ipython
 astroid==2.15.4
     # via pylint
 asttokens==2.2.1
     # via stack-data
 backcall==0.2.0
     # via ipython
+certifi==2022.12.7
+    # via requests
+charset-normalizer==3.1.0
+    # via requests
+cmake==3.26.3
+    # via triton
 comm==0.1.3
     # via ipykernel
 debugpy==1.6.7
@@ -25,7 +27,11 @@ dill==0.3.6
 executing==1.2.0
     # via stack-data
 filelock==3.12.0
-    # via torch
+    # via
+    #   torch
+    #   triton
+idna==3.4
+    # via requests
 ipykernel==6.22.0
     # via -r requirements.in
 ipython==8.13.2
@@ -44,6 +50,8 @@ jupyter-core==5.3.0
     #   jupyter-client
 lazy-object-proxy==1.9.0
     # via astroid
+lit==16.0.3
+    # via triton
 markupsafe==2.1.2
     # via jinja2
 matplotlib-inline==0.1.6
@@ -59,7 +67,34 @@ nest-asyncio==1.5.6
 networkx==3.1
     # via torch
 numpy==1.24.3
-    # via -r requirements.in
+    # via
+    #   -r requirements.in
+    #   torchtext
+nvidia-cublas-cu11==11.10.3.66
+    # via
+    #   nvidia-cudnn-cu11
+    #   nvidia-cusolver-cu11
+    #   torch
+nvidia-cuda-cupti-cu11==11.7.101
+    # via torch
+nvidia-cuda-nvrtc-cu11==11.7.99
+    # via torch
+nvidia-cuda-runtime-cu11==11.7.99
+    # via torch
+nvidia-cudnn-cu11==8.5.0.96
+    # via torch
+nvidia-cufft-cu11==10.9.0.58
+    # via torch
+nvidia-curand-cu11==10.2.10.91
+    # via torch
+nvidia-cusolver-cu11==11.4.0.1
+    # via torch
+nvidia-cusparse-cu11==11.7.4.91
+    # via torch
+nvidia-nccl-cu11==2.14.3
+    # via torch
+nvidia-nvtx-cu11==11.7.91
+    # via torch
 packaging==23.1
     # via ipykernel
 parso==0.8.3
@@ -90,6 +125,10 @@ pyzmq==25.0.2
     # via
     #   ipykernel
     #   jupyter-client
+requests==2.30.0
+    # via
+    #   torchdata
+    #   torchtext
 six==1.16.0
     # via python-dateutil
 stack-data==0.6.2
@@ -99,11 +138,21 @@ sympy==1.11.1
 tomlkit==0.11.8
     # via pylint
 torch==2.0.0
+    # via
+    #   -r requirements.in
+    #   torchdata
+    #   torchtext
+    #   triton
+torchdata==0.6.0
+    # via torchtext
+torchtext==0.15.1
     # via -r requirements.in
 tornado==6.3.1
     # via
     #   ipykernel
     #   jupyter-client
+tqdm==4.65.0
+    # via torchtext
 traitlets==5.9.0
     # via
     #   comm
@@ -112,9 +161,26 @@ traitlets==5.9.0
     #   jupyter-client
     #   jupyter-core
     #   matplotlib-inline
+triton==2.0.0
+    # via torch
 typing-extensions==4.5.0
     # via torch
+urllib3==2.0.2
+    # via
+    #   requests
+    #   torchdata
 wcwidth==0.2.6
     # via prompt-toolkit
+wheel==0.40.0
+    # via
+    #   nvidia-cublas-cu11
+    #   nvidia-cuda-cupti-cu11
+    #   nvidia-cuda-runtime-cu11
+    #   nvidia-curand-cu11
+    #   nvidia-cusparse-cu11
+    #   nvidia-nvtx-cu11
 wrapt==1.15.0
     # via astroid
+
+# The following packages are considered to be unsafe in a requirements file:
+# setuptools
