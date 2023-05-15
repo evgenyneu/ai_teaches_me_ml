@@ -75,6 +75,7 @@ networkx==3.1
 numpy==1.24.3
     # via
     #   -r requirements.in
+    #   torchtext
     #   transformers
 nvidia-cublas-cu11==11.10.3.66
     # via
@@ -116,6 +117,8 @@ platformdirs==3.5.0
     # via
     #   jupyter-core
     #   pylint
+portalocker==2.7.0
+    # via -r requirements.in
 prompt-toolkit==3.0.38
     # via ipython
 psutil==5.9.5
@@ -143,6 +146,8 @@ regex==2023.5.5
 requests==2.30.0
     # via
     #   huggingface-hub
+    #   torchdata
+    #   torchtext
     #   transformers
 six==1.16.0
     # via python-dateutil
@@ -154,10 +159,16 @@ tokenizers==0.13.3
     # via transformers
 tomlkit==0.11.8
     # via pylint
-torch==2.0.0
+torch==2.0.1
     # via
     #   -r requirements.in
+    #   torchdata
+    #   torchtext
     #   triton
+torchdata==0.6.1
+    # via torchtext
+torchtext==0.15.2
+    # via -r requirements.in
 tornado==6.3.1
     # via
     #   ipykernel
@@ -165,6 +176,7 @@ tornado==6.3.1
 tqdm==4.65.0
     # via
     #   huggingface-hub
+    #   torchtext
     #   transformers
 traitlets==5.9.0
     # via
@@ -183,7 +195,9 @@ typing-extensions==4.5.0
     #   huggingface-hub
     #   torch
 urllib3==2.0.2
-    # via requests
+    # via
+    #   requests
+    #   torchdata
 wcwidth==0.2.6
     # via prompt-toolkit
 wheel==0.40.0
