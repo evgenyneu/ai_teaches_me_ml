@@ -5,3 +5,4 @@ torch==2.0.1
 transformers==4.29.1
 torchtext==0.15.2
 portalocker
+spacy==3.5.3
