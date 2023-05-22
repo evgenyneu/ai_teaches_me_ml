@@ -2,7 +2,7 @@
 
 This is my logbook from my interactive lessons where ChatGPT teaches me ML
 
-The logs from each day are located in year/month/day directories. The directories have 'a' prefix, because Python does not run directories that are just numbers for its modules.
+The logs from each day are located in year/month/day directories. The directories have 'a' prefix, because Python does not like directories that are just numbers for its modules.
 
 ## Python setup
 
