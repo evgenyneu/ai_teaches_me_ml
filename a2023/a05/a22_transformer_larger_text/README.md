@@ -1,4 +1,8 @@
-# Install Calibre
+## Get text for training from ebooks web site
+
+https://www.gutenberg.org/browse/scores/top
+
+## Install Calibre
 
 ```
 sudo apt-get install calibre
